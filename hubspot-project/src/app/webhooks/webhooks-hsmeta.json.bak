@@ -1,0 +1,10 @@
+{
+  "uid": "prm_webhooks",
+  "type": "webhooks",
+  "config": {
+    "settings": {
+      "maxConcurrentRequests": 5
+    },
+    "subscriptions": {}
+  }
+}

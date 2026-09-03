@@ -1,0 +1,10 @@
+{
+  "uid": "prm_app_home",
+  "type": "card",
+  "config": {
+    "name": "Partner Program Dashboard",
+    "location": "home",
+    "entrypoint": "/app/cards/AppHomeCard.tsx",
+    "objectTypes": []
+  }
+}

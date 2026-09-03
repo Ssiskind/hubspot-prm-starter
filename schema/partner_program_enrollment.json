@@ -1,0 +1,97 @@
+{
+  "name": "partner_program_enrollment",
+  "labels": {
+    "singular": "Partner Program Enrollment",
+    "plural": "Partner Program Enrollments"
+  },
+  "primaryDisplayProperty": "enrollment_name",
+  "requiredProperties": ["enrollment_name"],
+  "properties": [
+    {
+      "name": "enrollment_name",
+      "label": "Enrollment Name",
+      "type": "string",
+      "fieldType": "text",
+      "description": "Auto-generated: Partner Company – Program Year"
+    },
+    {
+      "name": "tier",
+      "label": "Partner Tier",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        { "label": "Registered", "value": "registered", "displayOrder": 0 },
+        { "label": "Silver",     "value": "silver",     "displayOrder": 1 },
+        { "label": "Gold",       "value": "gold",       "displayOrder": 2 },
+        { "label": "Platinum",   "value": "platinum",   "displayOrder": 3 }
+      ]
+    },
+    {
+      "name": "annual_rev_target",
+      "label": "Annual Revenue Target",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "ytd_revenue",
+      "label": "YTD Revenue",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "certs_required",
+      "label": "Certifications Required",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "certs_earned",
+      "label": "Certifications Earned",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "agreement_ref",
+      "label": "Agreement Reference",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "agreement_signed_date",
+      "label": "Agreement Signed Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "enrolled_date",
+      "label": "Enrolled Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "renewal_date",
+      "label": "Renewal Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "mdf_allocation",
+      "label": "MDF Allocation",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "program_year",
+      "label": "Program Year",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "partner_specializations",
+      "label": "Specializations",
+      "type": "string",
+      "fieldType": "text"
+    }
+  ],
+  "associatedObjects": ["contacts", "companies", "deals"]
+}

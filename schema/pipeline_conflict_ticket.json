@@ -1,0 +1,21 @@
+{
+  "label": "Deal Conflict Resolution",
+  "displayOrder": 3,
+  "stages": [
+    {
+      "label": "New",
+      "displayOrder": 0,
+      "metadata": { "ticketState": "OPEN" }
+    },
+    {
+      "label": "Under Review",
+      "displayOrder": 1,
+      "metadata": { "ticketState": "OPEN" }
+    },
+    {
+      "label": "Resolved",
+      "displayOrder": 2,
+      "metadata": { "ticketState": "CLOSED" }
+    }
+  ]
+}

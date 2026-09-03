@@ -1,0 +1,67 @@
+{
+  "uid": "partner_prm_tier_recalculation",
+  "type": "workflow-action",
+  "config": {
+    "actionUrl": "https://your-portal.example.com/api/tier-recalculation",
+    "supportedClients": [{ "client": "WORKFLOWS" }],
+    "objectTypes": ["companies"],
+    "labels": {
+      "en": {
+        "actionName": "Recalculate Partner Tier",
+        "actionDescription": "Evaluates YTD revenue and certifications against tier thresholds and updates the partner_tier property on the Company record.",
+        "appDisplayName": "Partner PRM",
+        "inputFieldLabels": {
+          "silver_revenue_threshold": "Silver Tier Revenue Threshold (USD)",
+          "gold_revenue_threshold": "Gold Tier Revenue Threshold (USD)",
+          "platinum_revenue_threshold": "Platinum Tier Revenue Threshold (USD)"
+        },
+        "inputFieldDescriptions": {
+          "silver_revenue_threshold": "Minimum annualized managed revenue (MRR × 12) to qualify for Silver",
+          "gold_revenue_threshold": "Minimum annualized managed revenue (MRR × 12) to qualify for Gold",
+          "platinum_revenue_threshold": "Minimum annualized managed revenue (MRR × 12) to qualify for Platinum"
+        },
+        "outputFieldLabels": {
+          "new_tier": "New Tier Assigned"
+        }
+      }
+    },
+    "inputFields": [
+      {
+        "typeDefinition": {
+          "name": "silver_revenue_threshold",
+          "type": "number",
+          "fieldType": "number"
+        },
+        "supportedValueTypes": ["STATIC_VALUE"],
+        "isRequired": true
+      },
+      {
+        "typeDefinition": {
+          "name": "gold_revenue_threshold",
+          "type": "number",
+          "fieldType": "number"
+        },
+        "supportedValueTypes": ["STATIC_VALUE"],
+        "isRequired": true
+      },
+      {
+        "typeDefinition": {
+          "name": "platinum_revenue_threshold",
+          "type": "number",
+          "fieldType": "number"
+        },
+        "supportedValueTypes": ["STATIC_VALUE"],
+        "isRequired": true
+      }
+    ],
+    "outputFields": [
+      {
+        "typeDefinition": {
+          "name": "new_tier",
+          "type": "string",
+          "fieldType": "text"
+        }
+      }
+    ]
+  }
+}

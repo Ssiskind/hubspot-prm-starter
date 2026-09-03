@@ -1,0 +1,9 @@
+.env.local
+node_modules/
+.next/
+.hubspot/
+dist/
+.DS_Store
+*.log
+.cache/
+skills-lock.json

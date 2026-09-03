@@ -1,0 +1,8 @@
+{"name":"partner_sourced","label":"Partner Sourced","type":"bool","fieldType":"booleancheckbox","groupName":"dealinformation","options":[{"label":"Yes","value":"true","displayOrder":0},{"label":"No","value":"false","displayOrder":1}]}
+{"name":"deal_channel_type","label":"Deal Channel Type","type":"enumeration","fieldType":"select","groupName":"dealinformation","options":[{"label":"Direct","value":"direct","displayOrder":0},{"label":"Resell","value":"resell","displayOrder":1},{"label":"Referral","value":"referral","displayOrder":2},{"label":"Distribution","value":"distribution","displayOrder":3},{"label":"Co-Sell","value":"co_sell","displayOrder":4}]}
+{"name":"partner_discount_pct","label":"Partner Discount %","type":"number","fieldType":"number","groupName":"dealinformation"}
+{"name":"reseller_price","label":"Reseller Price","type":"number","fieldType":"number","groupName":"dealinformation"}
+{"name":"deal_registration_id","label":"Deal Registration ID","type":"string","fieldType":"text","groupName":"dealinformation"}
+{"name":"co_sell_eligible","label":"Co-Sell Eligible","type":"bool","fieldType":"booleancheckbox","groupName":"dealinformation","options":[{"label":"Yes","value":"true","displayOrder":0},{"label":"No","value":"false","displayOrder":1}]}
+{"name":"co_sell_status","label":"Co-Sell Status","type":"enumeration","fieldType":"select","groupName":"dealinformation","options":[{"label":"Not Started","value":"not_started","displayOrder":0},{"label":"In Progress","value":"in_progress","displayOrder":1},{"label":"Accepted","value":"accepted","displayOrder":2},{"label":"Declined","value":"declined","displayOrder":3}]}
+{"name":"microsoft_co_sell_id","label":"Microsoft Co-Sell ID","type":"string","fieldType":"text","groupName":"dealinformation"}

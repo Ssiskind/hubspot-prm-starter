@@ -1,0 +1,45 @@
+{
+  "uid": "partner_prm_app",
+  "type": "app",
+  "config": {
+    "description": "Partner Relationship Management — deal registrations, MDF requests, partner tiers, and co-sell enablement.",
+    "name": "Partner PRM",
+    "distribution": "private",
+    "auth": {
+      "type": "static",
+      "requiredScopes": [
+        "crm.objects.contacts.read",
+        "crm.objects.contacts.write",
+        "crm.objects.companies.read",
+        "crm.objects.companies.write",
+        "crm.objects.deals.read",
+        "crm.objects.deals.write",
+        "crm.objects.custom.read",
+        "crm.objects.custom.write",
+        "crm.schemas.custom.read",
+        "crm.schemas.custom.write",
+        "crm.schemas.deals.read",
+        "crm.schemas.deals.write",
+        "crm.objects.owners.read",
+        "crm.objects.users.read",
+        "automation",
+        "oauth"
+      ],
+      "optionalScopes": [],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": [
+        "https://api.hubapi.com"
+      ],
+      "iframe": [],
+      "img": []
+    },
+    "support": {
+      "supportEmail": "support@example.com",
+      "documentationUrl": "https://github.com/your-org/hubspot-prm-starter",
+      "supportUrl": "https://github.com/your-org/hubspot-prm-starter/issues",
+      "supportPhone": ""
+    }
+  }
+}

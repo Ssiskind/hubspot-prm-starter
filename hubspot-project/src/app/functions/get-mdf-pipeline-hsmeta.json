@@ -1,0 +1,7 @@
+{
+  "uid": "get_mdf_pipeline",
+  "type": "app-function",
+  "config": {
+    "entrypoint": "/app/functions/GetMdfPipeline.js"
+  }
+}

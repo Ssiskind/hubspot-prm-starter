@@ -1,0 +1,116 @@
+{
+  "name": "mdf_request",
+  "labels": {
+    "singular": "MDF Request",
+    "plural": "MDF Requests"
+  },
+  "primaryDisplayProperty": "request_name",
+  "requiredProperties": ["request_name", "amount_requested", "campaign_type"],
+  "properties": [
+    {
+      "name": "request_name",
+      "label": "Request Name",
+      "type": "string",
+      "fieldType": "text",
+      "description": "Auto-generated: Partner – Campaign Type – Quarter"
+    },
+    {
+      "name": "campaign_type",
+      "label": "Campaign Type",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        { "label": "Event / Sponsorship",    "value": "event_sponsorship",   "displayOrder": 0 },
+        { "label": "Digital Advertising",    "value": "digital_advertising", "displayOrder": 1 },
+        { "label": "Content / Webinar",      "value": "content_webinar",     "displayOrder": 2 },
+        { "label": "Direct Mail",            "value": "direct_mail",         "displayOrder": 3 },
+        { "label": "Sales Enablement",       "value": "sales_enablement",    "displayOrder": 4 },
+        { "label": "Demo / POC",             "value": "demo_poc",            "displayOrder": 5 },
+        { "label": "Other",                  "value": "other",               "displayOrder": 6 }
+      ]
+    },
+    {
+      "name": "program_source",
+      "label": "Program Source",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        { "label": "Partner MDF",       "value": "partner_mdf",       "displayOrder": 0 },
+        { "label": "Microsoft Co-op",   "value": "microsoft_co_op",   "displayOrder": 1 }
+      ]
+    },
+    {
+      "name": "amount_requested",
+      "label": "Amount Requested",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "amount_approved",
+      "label": "Amount Approved",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "amount_claimed",
+      "label": "Amount Claimed",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "amount_reimbursed",
+      "label": "Amount Reimbursed",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "activity_start_date",
+      "label": "Activity Start Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "activity_end_date",
+      "label": "Activity End Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "proof_of_execution_url",
+      "label": "Proof of Execution URL",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "campaign_description",
+      "label": "Campaign Description",
+      "type": "string",
+      "fieldType": "textarea"
+    },
+    {
+      "name": "rejection_reason",
+      "label": "Rejection Reason",
+      "type": "string",
+      "fieldType": "textarea"
+    },
+    {
+      "name": "quarter",
+      "label": "Quarter",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        { "label": "Q1", "value": "q1", "displayOrder": 0 },
+        { "label": "Q2", "value": "q2", "displayOrder": 1 },
+        { "label": "Q3", "value": "q3", "displayOrder": 2 },
+        { "label": "Q4", "value": "q4", "displayOrder": 3 }
+      ]
+    },
+    {
+      "name": "fiscal_year",
+      "label": "Fiscal Year",
+      "type": "number",
+      "fieldType": "number"
+    }
+  ],
+  "associatedObjects": ["contacts", "companies", "deals"]
+}

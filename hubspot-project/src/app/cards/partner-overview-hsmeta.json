@@ -1,0 +1,10 @@
+{
+  "uid": "partner_prm_partner_overview_card",
+  "type": "card",
+  "config": {
+    "name": "Partner Overview",
+    "location": "crm.record.sidebar",
+    "entrypoint": "/app/cards/PartnerOverviewCard.tsx",
+    "objectTypes": ["companies"]
+  }
+}

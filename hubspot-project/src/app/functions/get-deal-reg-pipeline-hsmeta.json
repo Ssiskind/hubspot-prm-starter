@@ -1,0 +1,7 @@
+{
+  "uid": "get_deal_reg_pipeline",
+  "type": "app-function",
+  "config": {
+    "entrypoint": "/app/functions/GetDealRegPipeline.js"
+  }
+}

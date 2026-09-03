@@ -1,0 +1,3 @@
+{"name":"conflict_end_customer","label":"Conflicting End Customer","type":"string","fieldType":"text","groupName":"ticketinformation","description":"The end customer name at the center of the deal conflict"}
+{"name":"resolution_outcome","label":"Resolution Outcome","type":"enumeration","fieldType":"select","groupName":"ticketinformation","options":[{"label":"Upheld New Registration","value":"upheld_new","displayOrder":0},{"label":"Upheld Existing Registration","value":"upheld_existing","displayOrder":1},{"label":"Both Rejected","value":"both_rejected","displayOrder":2},{"label":"Split / Co-Sell","value":"split","displayOrder":3}]}
+{"name":"resolution_notes","label":"Resolution Notes","type":"string","fieldType":"textarea","groupName":"ticketinformation"}

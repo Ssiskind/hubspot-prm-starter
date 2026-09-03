@@ -1,0 +1,31 @@
+{
+  "label": "Deal Registration Approval",
+  "displayOrder": 0,
+  "stages": [
+    {
+      "label": "Submitted",
+      "displayOrder": 0,
+      "metadata": { "probability": "0.1" }
+    },
+    {
+      "label": "Under Review",
+      "displayOrder": 1,
+      "metadata": { "probability": "0.3" }
+    },
+    {
+      "label": "Approved",
+      "displayOrder": 2,
+      "metadata": { "probability": "1.0" }
+    },
+    {
+      "label": "Rejected",
+      "displayOrder": 3,
+      "metadata": { "probability": "0.0" }
+    },
+    {
+      "label": "Expired",
+      "displayOrder": 4,
+      "metadata": { "probability": "0.0" }
+    }
+  ]
+}

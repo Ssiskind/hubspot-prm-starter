@@ -1,0 +1,9 @@
+{"name":"partner_tier","label":"Partner Tier","type":"enumeration","fieldType":"select","groupName":"companyinformation","options":[{"label":"Registered","value":"registered","displayOrder":0},{"label":"Silver","value":"silver","displayOrder":1},{"label":"Gold","value":"gold","displayOrder":2},{"label":"Platinum","value":"platinum","displayOrder":3}]}
+{"name":"partner_status","label":"Partner Status","type":"enumeration","fieldType":"select","groupName":"companyinformation","options":[{"label":"Active","value":"active","displayOrder":0},{"label":"Pending","value":"pending","displayOrder":1},{"label":"Inactive","value":"inactive","displayOrder":2},{"label":"Suspended","value":"suspended","displayOrder":3}]}
+{"name":"partner_since","label":"Partner Since","type":"date","fieldType":"date","groupName":"companyinformation"}
+{"name":"partner_territory","label":"Partner Territory","type":"string","fieldType":"text","groupName":"companyinformation"}
+{"name":"partner_mrr_managed","label":"Partner MRR Managed","type":"number","fieldType":"number","groupName":"companyinformation"}
+{"name":"partner_certification_count","label":"Partner Certification Count","type":"number","fieldType":"number","groupName":"companyinformation"}
+{"name":"mdf_balance_available","label":"MDF Balance Available","type":"number","fieldType":"number","groupName":"companyinformation"}
+{"name":"microsoft_partner_id","label":"Microsoft Partner ID","type":"string","fieldType":"text","groupName":"companyinformation"}
+{"name":"partner_specializations","label":"Partner Specializations","type":"string","fieldType":"text","groupName":"companyinformation"}

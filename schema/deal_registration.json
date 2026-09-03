@@ -1,0 +1,110 @@
+{
+  "name": "deal_registration",
+  "description":"Deal registrations keep track of partner deals in the account.",
+  "labels": {
+    "singular": "Deal Registration",
+    "plural": "Deal Registrations"
+  },
+  "primaryDisplayProperty": "registration_name",
+  "secondaryDisplayProperties": ["end_customer_name"],
+  "searchableProperties": ["end_customer_domain"] ,
+  "requiredProperties": ["registration_name", "end_customer_name", "estimated_arr"],
+  "properties": [
+    {
+      "name": "registration_name",
+      "label": "Registration Name",
+      "type": "string",
+      "fieldType": "text",
+      "description": "Auto-generated: Partner – End Customer – Product – Date"
+    },
+    {
+      "name": "end_customer_name",
+      "label": "End Customer Name",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "end_customer_domain",
+      "label": "End Customer Domain",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "estimated_arr",
+      "label": "Estimated ARR",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "product_sku",
+      "label": "Product / SKU",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "approved_discount_pct",
+      "label": "Approved Discount %",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "expiry_date",
+      "label": "Expiry Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "submission_date",
+      "label": "Submission Date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "rejection_reason",
+      "label": "Rejection Reason",
+      "type": "string",
+      "fieldType": "textarea"
+    },
+    {
+      "name": "partner_notes",
+      "label": "Partner Notes",
+      "type": "string",
+      "fieldType": "textarea"
+    },
+    {
+      "name": "channel_manager_notes",
+      "label": "Channel Manager Notes",
+      "type": "string",
+      "fieldType": "textarea"
+    },
+    {
+      "name": "deal_channel_type",
+      "label": "Channel Type",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        { "label": "Resell",       "value": "resell",       "displayOrder": 0 },
+        { "label": "Referral",     "value": "referral",     "displayOrder": 1 },
+        { "label": "Distribution", "value": "distribution", "displayOrder": 2 },
+        { "label": "Co-Sell",      "value": "co_sell",      "displayOrder": 3 }
+      ]
+    },
+    {
+      "name": "co_sell_eligible",
+      "label": "Co-Sell Eligible",
+      "type": "bool",
+      "fieldType": "booleancheckbox",
+      "options": [
+        { "label": "Yes", "value": "true",  "displayOrder": 0 },
+        { "label": "No",  "value": "false", "displayOrder": 1 }
+      ]
+    },
+    {
+      "name": "microsoft_co_sell_id",
+      "label": "Microsoft Co-Sell ID",
+      "type": "string",
+      "fieldType": "text"
+    }
+  ],
+  "associatedObjects": ["contacts", "companies", "deals", "tickets"]
+}

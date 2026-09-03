@@ -1,0 +1,31 @@
+{
+  "label": "Partner Onboarding",
+  "displayOrder": 1,
+  "stages": [
+    {
+      "label": "Applied",
+      "displayOrder": 0,
+      "metadata": { "probability": "0.1" }
+    },
+    {
+      "label": "Agreement Sent",
+      "displayOrder": 1,
+      "metadata": { "probability": "0.2" }
+    },
+    {
+      "label": "Agreement Signed",
+      "displayOrder": 2,
+      "metadata": { "probability": "0.4" }
+    },
+    {
+      "label": "Enablement",
+      "displayOrder": 3,
+      "metadata": { "probability": "0.7" }
+    },
+    {
+      "label": "Active",
+      "displayOrder": 4,
+      "metadata": { "probability": "1.0" }
+    }
+  ]
+}

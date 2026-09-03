@@ -1,0 +1,10 @@
+{
+  "uid": "partner_prm_mdf_requests_card",
+  "type": "card",
+  "config": {
+    "name": "MDF Requests",
+    "location": "crm.record.tab",
+    "entrypoint": "/app/cards/MdfRequestsCard.tsx",
+    "objectTypes": ["companies"]
+  }
+}

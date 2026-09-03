@@ -1,0 +1,7 @@
+{
+  "uid": "partner_prm_pages",
+  "type": "page",
+  "config": {
+    "entrypoint": "/app/pages/Pages.tsx"
+  }
+}
