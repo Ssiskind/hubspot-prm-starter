@@ -26,7 +26,7 @@ HubSpot CRM UI ◄── UI Extensions ◄─ HubSpot CRM API
 ### 1. Clone this repo
 
 ```zsh
-git clone https://github.com/your-org/hubspot-prm-starter.git
+git clone https://github.com/Ssiskind/hubspot-prm-starter.git
 cd hubspot-prm-starter
 ```
 
